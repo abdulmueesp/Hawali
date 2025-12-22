@@ -6,7 +6,7 @@ import { MdOutlineArrowForward, MdOutlineArrowOutward } from "react-icons/md";
 
 export default function BannerSection() {
   return (
-    <section className="relative w-full h-[60vh] md:h-[100vh]">
+    <section className="relative w-full h-[60vh] md:h-[100vh] overflow-hidden">
       {/* Background Image */}
       <Image
         src={bannerimg}

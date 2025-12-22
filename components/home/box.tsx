@@ -4,7 +4,7 @@ import usaImage from "../../public/images/usa.png"
 
 const Box = () => {
   return (
-    <div className="w-full h-[80px] flex flex-col md:flex-row justify-center items-center gap-10 md:gap-16 bg-[#F6F5F1] group cursor-pointer">
+    <div className="relative w-full min-h-[100px] md:h-[80px] flex flex-col md:flex-row justify-center items-center gap-6 md:gap-16 py-4 md:py-0 bg-[#F6F5F1] group cursor-pointer">
 
       {/* Item 1 */}
       <div className="flex flex-col items-center md:flex-row gap-2">
