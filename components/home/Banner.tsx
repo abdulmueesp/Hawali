@@ -14,8 +14,15 @@ export default function BannerSection() {
         className="object-center"
       />
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/40" />
+      {/* Dark overlay: smooth fade from 70% dark to clear */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        aria-hidden="true"
+        style={{
+          background:
+            "linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 55%, rgba(0,0,0,0) 100%)",
+        }}
+      />
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center">
@@ -27,7 +34,7 @@ export default function BannerSection() {
             </h1>
 
             {/* Description */}
-            <p className="mt-5 text-sm md:text-base text-gray-200">
+            <p className="mt-5 text-sm md:text-base text-gray-200 font-roboto">
               Island-crafted, precision-machined, and made to thrive in
               Hawaii&apos;s climate for generations.
             </p>
