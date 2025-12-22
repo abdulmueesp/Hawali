@@ -22,7 +22,7 @@ export default function BannerSection() {
         <div className="max-w-7xl w-full px-6 md:px-12">
           <div className="max-w-xl text-white">
             {/* Heading */}
-            <h1 className="text-3xl md:text-5xl font-nunito leading-tight">
+            <h1 className="text-3xl md:text-5xl font-playfair leading-tight">
               A Door Designed <br /> for Paradise.
             </h1>
 
