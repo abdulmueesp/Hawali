@@ -8,7 +8,7 @@ export default function Home() {
     <>
     <Header />
     <BannerSection />
-  {/* <Box /> */}
+  <Box />
   <div className="w-full h-[400px] border" ></div>
     </>
   );
