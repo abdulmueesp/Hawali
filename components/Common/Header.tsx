@@ -1,0 +1,82 @@
+"use client";
+
+import Image from "next/image";
+import { useState } from "react";
+import { HiMenu, HiX } from "react-icons/hi";
+import logo from "../../public/images/logo.png";
+
+export default function Header() {
+  const [open, setOpen] = useState(false);
+
+  const menuItems = ["PRODUCTS", "GALLERY", "ABOUT", "CONTACT"];
+
+  return (
+    <header className="fixed top-0 left-0 z-50 w-full bg-black h-[70px] md:h-[80px]">
+      <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-5">
+
+        {/* Logo */}
+        <div className="flex items-center">
+        <Image
+  src={logo}
+  alt="Logo"
+  width={40}     // max width for larger screens
+  height={40}    // max height for larger screens
+  className="w-[30px] h-[40px] md:w-[40px] md:h-[50px]"
+  priority
+/>
+        </div>
+
+        {/* Desktop Menu */}
+        <nav className="hidden md:flex items-center gap-8 text-white font-medium font-roboto">
+          {menuItems.map((item) => (
+            <a
+              key={item}
+              href="#"
+              className="transition-colors duration-300 hover:text-[#FF6E4A]"
+            >
+              {item}
+            </a>
+          ))}
+        </nav>
+
+        {/* Mobile Menu Icon */}
+        <button
+          onClick={() => setOpen(true)}
+          className="md:hidden text-white text-3xl"
+        >
+          <HiMenu />
+        </button>
+      </div>
+
+      {/* Mobile Slide Menu */}
+      <div
+        className={`
+          fixed top-0 left-0 w-full bg-black text-white
+          transition-transform duration-500 ease-in-out
+          ${open ? "translate-y-0" : "-translate-y-full"}
+        `}
+      >
+        {/* Close Icon */}
+        <div className="flex h-[70px] items-center justify-end px-5">
+          <button onClick={() => setOpen(false)} className="text-3xl">
+            <HiX />
+          </button>
+        </div>
+
+        {/* Menu Items */}
+        <nav className="flex flex-col items-center gap-6 py-10 text-lg font-medium font-roboto">
+          {menuItems.map((item) => (
+            <a
+              key={item}
+              href="#"
+              onClick={() => setOpen(false)}
+              className="transition-colors duration-300 hover:text-[#FF6E4A]"
+            >
+              {item}
+            </a>
+          ))}
+        </nav>
+      </div>
+    </header>
+  );
+}
