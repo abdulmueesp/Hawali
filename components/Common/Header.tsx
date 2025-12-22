@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full bg-black h-[70px] md:h-[80px]">
-      <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-5">
+      <div className="px-6 md:px-15 flex h-full max-w-7xl items-center justify-between ">
 
         {/* Logo */}
         <div className="flex items-center">

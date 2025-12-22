@@ -28,7 +28,7 @@ export default function BannerSection() {
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center">
-        <div className="max-w-7xl w-full px-6 md:px-12">
+        <div className="max-w-7xl w-full px-6 md:px-15">
           <div className="max-w-xl text-white">
             {/* Heading */}
             <h1 className="text-3xl md:text-[58px] font-playfair leading-tight">

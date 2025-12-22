@@ -1,6 +1,7 @@
 import Header from "@/components/Common/Header";
 import BannerSection from "@/components/home/Banner";
 import Box from "@/components/home/box";
+import StepsDoor from "@/components/home/Steps";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,7 +10,8 @@ export default function Home() {
     <Header />
     <BannerSection />
   <Box />
-  <div className="w-full h-[400px] border" ></div>
+  <StepsDoor />
+  <div className="w-full h-[400px] border " ></div>
     </>
   );
 }
