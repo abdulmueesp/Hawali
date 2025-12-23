@@ -21,7 +21,7 @@ const StepsDoor = () => {
           <h2 className="text-2xl md:text-5xl font-roboto text-black font-medium">
             How To Order Doors
           </h2>
-          <p className="mt-2 md:mt-3 text-gray-600 text-sm md:text-base font-roboto max-w-xl px-2">
+          <p className="mt-2 md:mt-3 text-gray-600 text-sm md:text-base font-montserrat max-w-xl px-2">
             Four easy steps to get your perfect premium door delivered
           </p>
         </div>
