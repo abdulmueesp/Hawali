@@ -28,7 +28,7 @@ const StepsDoor = () => {
         <div className="group w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-0 md:gap-12 items-start font-roboto">
 
           {/* STEP 1 */}
-          <div className="relative flex flex-col justify-center items-center overflow-visible border">
+          <div className="relative flex flex-col justify-center items-center overflow-visible">
 
             <div className={stepBox}>
               <Image
@@ -69,7 +69,7 @@ const StepsDoor = () => {
           </div>
 
           {/* STEP 2 */}
-          <div className="relative flex flex-col justify-center items-center overflow-visible border">
+          <div className="relative flex flex-col justify-center items-center overflow-visible">
             <div className={stepBox}>
               <Image
                 src={Review}
@@ -106,7 +106,7 @@ const StepsDoor = () => {
           </div>
 
           {/* STEP 3 */}
-          <div className="relative flex flex-col justify-center items-center overflow-visible border">
+          <div className="relative flex flex-col justify-center items-center overflow-visible">
             <div className={stepBox}>
               <Image
                 src={Submit}
@@ -143,7 +143,7 @@ const StepsDoor = () => {
           </div>
 
           {/* STEP 4 */}
-          <div className="flex justify-center border">
+          <div className="flex justify-center">
             <div className={stepBox}>
               <Image
                 src={Yourdoor}
