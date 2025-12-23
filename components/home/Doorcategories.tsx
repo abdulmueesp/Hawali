@@ -5,9 +5,12 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
  import Door1 from "../../public/images/Door1.png"
-import Door2 from "../../public/images/Door2.png"
 import Door3 from "../../public/images/Door3.png"
 import Door4 from "../../public/images/Door4.png"
+import Truck from "../../public/images/truck.png"
+import Door from "../../public/images/Door.png"
+import Settings from "../../public/images/Settings.png"
+import Tick from "../../public/images/Tick.png"
 const DoorCategories = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
   const [windowWidth, setWindowWidth] = useState(1024);
@@ -73,10 +76,10 @@ const DoorCategories = () => {
   };
 
   return (
-    <div className="w-full h-min md:min-h-screen bg-white py-10 px-4">
-      <div className="max-w-7xl mx-auto">
+    <div className="w-full h-min md:min-h-screen bg-white py-10 ">
+      <div className="max-w-7xl md:max-w-full mx-auto">
         {/* Header */}
-        <div className="mb-10 ">
+        <div className="mb-10 pl-5 md:pl-[60px] ">
           <h1 className="text-2xl md:text-5xl font-medium text-black font-roboto mb-4">Door Categories</h1>
           <p className="text-sm md:text-lg text-[#3B3B3B] font-roboto max-w-xl">
             Explore our full line of pre-hung wood and fiberglass doors,<br/>
@@ -125,7 +128,7 @@ const DoorCategories = () => {
                     <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                         <h3 className="text-sm md:text-base  flex-shrink-0 font-roboto" >{category.title}</h3>
                         {isCurrent && (
-                          <button style={{backgroundColor: '#B6D78A'}} className="hover:bg-[#a3c677] text-gray-900 text-sm rounded-full px-3 ">
+                          <button style={{backgroundColor: '#B6D78A', fontSize: "0.875rem"}} className="hover:bg-[#a3c677] text-gray-900  rounded-full px-3 ">
                             View Details
                           </button>
                         )}
@@ -163,6 +166,47 @@ const DoorCategories = () => {
           ))}
         </div>
       </div>
+      <div className="relative w-full min-h-[68px] md:h-[68px] flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 py-3 md:py-0 bg-[#F6F5F1] group cursor-pointer mt-[40px] md:mt-[75px]">
+
+{/* Item 1 */}
+<div className="flex  items-center md:flex-row gap-2">
+  <Image
+    src={Door}
+    alt="Use"
+    width={32}
+    height={32}
+    className="filter grayscale group-hover:grayscale-0 transition-all duration-500"
+  />
+  <span className=" text-[#585858]  font-roboto md:text-lg">
+  Custom Doors
+  </span>
+</div>
+<div className="flex  items-center md:flex-row gap-2">
+  <Image
+    src={Tick}
+    alt="Use"
+    width={32}
+    height={32}
+    className="filter grayscale group-hover:grayscale-0 transition-all duration-500"
+  />
+  <span className=" text-[#585858]  font-roboto md:text-lg">
+  Complete Precision
+  </span>
+</div>
+<div className="flex  items-center md:flex-row gap-2">
+  <Image
+    src={Settings}
+    alt="Use"
+    width={32}
+    height={32}
+    className="filter grayscale group-hover:grayscale-0 transition-all duration-500"
+  />
+  <span className=" text-[#585858]  font-roboto md:text-lg">
+  Custom Jambs
+  </span>
+</div>
+
+</div>
     </div>
   );
 };
