@@ -11,7 +11,7 @@ export default function Home() {
     <BannerSection />
   <Box />
   <StepsDoor />
-  <div className="w-full h-[400px] border " ></div>
+  <div className="w-full h-[400px]  " ></div>
     </>
   );
 }
