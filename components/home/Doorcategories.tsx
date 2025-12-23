@@ -1,0 +1,170 @@
+
+"use client";
+
+import { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
+ import Door1 from "../../public/images/Door1.png"
+import Door2 from "../../public/images/Door2.png"
+import Door3 from "../../public/images/Door3.png"
+import Door4 from "../../public/images/Door4.png"
+const DoorCategories = () => {
+  const [currentIndex, setCurrentIndex] = useState(1);
+  const [windowWidth, setWindowWidth] = useState(1024);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const categories = [
+    {
+      id: 1,
+      title: "Wood Core Door",
+      image: Door1,
+    },
+    {
+      id: 2,
+      title: "Fibre Glass Door",
+      image: Door4,
+    },
+    {
+      id: 3,
+      title: "Hollow Core Doors",
+      image:Door3,
+    },
+    {
+      id: 4,
+      title: "Solid Wood Door",
+      image: Door4,
+    },
+
+  ];
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % categories.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev - 1 + categories.length) % categories.length);
+  };
+
+  const getTranslateX = (position:any) => {
+    if (windowWidth < 768) return position * 200;
+    if (windowWidth < 1024) return position * 280;
+    return position * 380;
+  };
+
+  const getScale = (isCurrent:any) => {
+    if (windowWidth < 768) return isCurrent ? 1 : 0.75;
+    if (windowWidth < 1024) return isCurrent ? 1.05 : 0.85;
+    return isCurrent ? 1.1 : 0.9;
+  };
+
+  const getVisibleCards = () => {
+    const visible = [];
+    for (let i = -1; i <= 1; i++) {
+      const index = (currentIndex + i + categories.length) % categories.length;
+      visible.push({ ...categories[index], position: i });
+    }
+    return visible;
+  };
+
+  return (
+    <div className="w-full h-min md:min-h-screen bg-white py-10 px-4">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="mb-10 ">
+          <h1 className="text-2xl md:text-5xl font-medium text-black font-roboto mb-4">Door Categories</h1>
+          <p className="text-sm md:text-lg text-[#3B3B3B] font-roboto max-w-xl">
+            Explore our full line of pre-hung wood and fiberglass doors,<br/>
+            organized by material and style.
+          </p>
+        </div>
+
+        {/* Carousel */}
+        <div className="relative flex items-center justify-center">
+          {/* Previous Button */}
+          <button
+            onClick={prevSlide}
+            className="absolute left-0 md:left-4 lg:left-0 z-20 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-gray-400 hover:bg-gray-500 text-white flex items-center justify-center transition-all shadow-lg"
+            aria-label="Previous door"
+          >
+            <ChevronLeft className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+          </button>
+
+          {/* Cards Container */}
+          <div className="relative w-full max-w-5xl h-[350px] md:h-[450px] lg:h-[500px] flex items-center justify-center overflow-hidden">
+            {getVisibleCards().map((category, idx) => {
+              const isCurrent = category.position === 0;
+              const isLeft = category.position === -1;
+              const isRight = category.position === 1;
+
+              return (
+                <div
+                  key={category.id}
+                  className={`absolute transition-all duration-500 ease-out ${
+                    isCurrent
+                      ? "z-30 scale-100 md:scale-105 lg:scale-110 opacity-100"
+                      : "z-10 scale-75 md:scale-85 lg:scale-90 opacity-40 md:opacity-50 lg:opacity-60"
+                  }`}
+                  style={{
+                    transform: `translateX(${getTranslateX(category.position)}px) scale(${getScale(isCurrent)})`,
+                  }}
+                >
+                  <div className="relative w-48 h-[300px] md:w-64 md:h-[380px] lg:w-80  rounded-xl md:rounded-2xl overflow-hidden shadow-xl md:shadow-2xl">
+                    <Image
+                      src={category.image}
+                      alt={category.title}
+                      className="w-full h-full object-cover rounded-xl md:rounded-2xl"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4 lg:p-6 text-white">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                        <h3 className="text-sm md:text-base  flex-shrink-0 font-roboto" >{category.title}</h3>
+                        {isCurrent && (
+                          <button style={{backgroundColor: '#B6D78A'}} className="hover:bg-[#a3c677] text-gray-900 text-sm rounded-full px-3 ">
+                            View Details
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Next Button */}
+          <button
+            onClick={nextSlide}
+            className="absolute right-0 md:right-4 lg:right-0 z-20 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-gray-400 hover:bg-gray-500 text-white flex items-center justify-center transition-all shadow-lg"
+            aria-label="Next door"
+          >
+            <ChevronRight className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
+          </button>
+        </div>
+
+        {/* Dots Indicator */}
+        <div className="flex justify-center gap-2 mt-12">
+          {categories.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setCurrentIndex(idx)}
+              className={`h-2 rounded-full transition-all ${
+                idx === currentIndex
+                  ? "w-8 bg-orange-500"
+                  : "w-2 bg-gray-300 hover:bg-gray-400"
+              }`}
+              aria-label={`Go to slide ${idx + 1}`}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default DoorCategories;

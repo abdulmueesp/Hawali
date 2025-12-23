@@ -21,7 +21,7 @@ const StepsDoor = () => {
           <h2 className="text-2xl md:text-5xl font-roboto text-black font-medium">
             How To Order Doors
           </h2>
-          <p className="mt-2 md:mt-3 text-gray-600 text-sm md:text-base font-montserrat max-w-xl px-2">
+          <p className="mt-2 md:mt-3 text-[#3B3B3B] text-sm md:text-base font-montserrat max-w-xl px-2">
             Four easy steps to get your perfect premium door delivered
           </p>
         </div>
@@ -210,7 +210,7 @@ const StepsDoor = () => {
     className="filter grayscale group-hover:grayscale-0 transition-all duration-500"
   />
   <span className=" text-[#585858]  font-roboto md:text-lg">
-    Manufactured in the US
+  Delivered Across Hawaii.
   </span>
 </div>
 
