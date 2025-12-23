@@ -57,7 +57,7 @@ export default function BannerSection() {
 />
 
 {/* Content */}
-<span className="relative z-10 flex items-center gap-3">
+<span className="relative z-10 flex items-center gap-3 text-[15px] md:text-lg">
   Build Your Door
 
   {/* Arrow (your previous working animation) */}

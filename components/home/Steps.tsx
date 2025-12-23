@@ -180,7 +180,7 @@ const StepsDoor = () => {
           />
 
           {/* Content */}
-          <span className="relative z-10 flex items-center gap-3 text-[15px] md:text-base">
+          <span className="relative z-10 flex items-center gap-3 text-[15px] md:text-lg">
           Start Building Your Door Now
 
             {/* Arrow (your previous working animation) */}
