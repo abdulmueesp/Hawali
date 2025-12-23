@@ -7,7 +7,7 @@ import Yourdoor from "../../public/images/yourdoor.png";
 import Greenarrow from "../../public/images/greenarrow.png";
 import Downarrow from "../../public/images/downarrow.png"
 const stepBox =
-  "flex flex-col items-center text-center px-4 pt-0 md:pt-10 md:pb-10 w-full max-w-[260px] mx-auto";
+  "flex flex-col items-center text-center px-2 pt-0 md:pt-10 md:pb-10 w-full max-w-[260px] mx-auto";
 
 const StepsDoor = () => {
   return (
@@ -28,7 +28,7 @@ const StepsDoor = () => {
         <div className="group w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-0 md:gap-12 items-start font-roboto">
 
           {/* STEP 1 */}
-          <div className="relative flex flex-col justify-center items-center overflow-visible ">
+          <div className="relative flex flex-col justify-center items-center overflow-visible border">
 
             <div className={stepBox}>
               <Image
@@ -36,9 +36,9 @@ const StepsDoor = () => {
                 alt="Build It"
                 width={170}
                 height={170}
-                className="w-[90px] sm:w-[140px] md:w-[170px] h-auto mb-5 md:mb-6 grayscale group-hover:grayscale-0 transition-all duration-500"
+                className="w-[140px] md:w-[170px] h-auto mb-5 md:mb-6 grayscale group-hover:grayscale-0 transition-all duration-500"
               />
-              <h4 className="text-xl font-medium">Build It</h4>
+              <h4 className="text-xl font-medium text-black">Build It</h4>
               <p className="mt-2 text-[#3B3B3B] text-sm md:text-base">
                 Build your perfect door with our easy, interactive builder.
               </p>
@@ -69,16 +69,16 @@ const StepsDoor = () => {
           </div>
 
           {/* STEP 2 */}
-          <div className="relative flex flex-col justify-center items-center overflow-visible ">
+          <div className="relative flex flex-col justify-center items-center overflow-visible border">
             <div className={stepBox}>
               <Image
                 src={Review}
                 alt="Review"
                 width={100}
                 height={100}
-                className=" w-[70px] sm:w-[80px] md:w-[100px] h-auto mb-5 md:mb-6 grayscale group-hover:grayscale-0 transition-all duration-500"
+                className=" w-[80px] md:w-[100px] h-auto mb-5 md:mb-6 grayscale group-hover:grayscale-0 transition-all duration-500"
               />
-              <h4 className="text-xl font-medium">Review</h4>
+              <h4 className="text-xl font-medium text-black">Review</h4>
               <p className="mt-2 text-[#3B3B3B] text-sm md:text-base">
                 Add your details and review your quote.
               </p>
@@ -106,16 +106,16 @@ const StepsDoor = () => {
           </div>
 
           {/* STEP 3 */}
-          <div className="relative flex flex-col justify-center items-center overflow-visible ">
+          <div className="relative flex flex-col justify-center items-center overflow-visible border">
             <div className={stepBox}>
               <Image
                 src={Submit}
                 alt="Submit"
                 width={210}
                 height={210}
-                className="w-[110px] sm:w-[170px] md:w-[210px] h-auto mb-5 md:mb-6 grayscale group-hover:grayscale-0 transition-all duration-500"
+                className="w-[160px] md:w-[210px] h-auto mb-5 md:mb-6 grayscale group-hover:grayscale-0 transition-all duration-500"
               />
-              <h4 className="text-xl font-medium">Submit</h4>
+              <h4 className="text-xl font-medium text-black">Submit</h4>
               <p className="mt-2 text-[#3B3B3B] text-sm md:text-base">
                 Confirm your specs and Submit your quote.
               </p>
@@ -143,16 +143,16 @@ const StepsDoor = () => {
           </div>
 
           {/* STEP 4 */}
-          <div className="flex justify-center">
+          <div className="flex justify-center border">
             <div className={stepBox}>
               <Image
                 src={Yourdoor}
                 alt="Your Door"
                 width={120}
                 height={120}
-                className="w-[70px] sm:w-[90px] md:w-[120px] h-auto mb-5 md:mb-6 grayscale group-hover:grayscale-0 transition-all duration-500"
+                className="w-[90px] md:w-[120px] h-auto mb-5 md:mb-6 grayscale group-hover:grayscale-0 transition-all duration-500"
               />
-              <h4 className="text-xl font-medium">Get Your Door</h4>
+              <h4 className="text-xl font-medium text-black">Get Your Door</h4>
               <p className="mt-2 text-[#3B3B3B] text-sm md:text-base">
                 We price it, prep it, and get it ready.
               </p>
