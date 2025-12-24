@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
-import bannerimg from "../../public/images/banner.png";
+import bannerimg from "../../public/images/banner2.png";
 import { GoArrowUpRight } from "react-icons/go";
 import { MdOutlineArrowForward, MdOutlineArrowOutward } from "react-icons/md";
 
@@ -22,7 +22,7 @@ export default function BannerSection() {
         aria-hidden="true"
         style={{
           background:
-            "linear-gradient(90deg, rgba(0,0,0,0.70) 0%, rgba(0,0,0,0.70) 50%, rgba(0,0,0,0) 100%)",
+            "linear-gradient(90deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 100%)",
         }}
       />
 

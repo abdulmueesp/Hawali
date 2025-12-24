@@ -81,10 +81,17 @@ const DoorCategories = () => {
         {/* Header */}
         <div className="mb-10 pl-5 md:pl-[60px] ">
           <h1 className="text-2xl md:text-5xl font-medium text-black font-roboto mb-4">Door Categories</h1>
-          <p className="text-sm md:text-lg text-[#3B3B3B] font-roboto max-w-xl">
+          {/* <p className="text-sm md:text-lg text-[#3B3B3B] font-roboto max-w-xl">
             Explore our full line of pre-hung wood and fiberglass doors,<br/>
             organized by material and style.
-          </p>
+          </p> */}
+         <p className="text-sm md:text-lg text-[#3B3B3B] font-roboto max-w-xl pr-2">
+  Explore our full line of pre-hung wood and fiberglass doors,
+  <span className="hidden md:block"></span>
+  organized by material and style.
+</p>
+
+
         </div>
 
         {/* Carousel */}
@@ -173,11 +180,11 @@ const DoorCategories = () => {
   <Image
     src={Door}
     alt="Use"
-    width={32}
-    height={32}
-    className="filter grayscale group-hover:grayscale-0 transition-all duration-500"
+    className="w-5 h-5
+      sm:w-6 sm:h-6
+      md:w-8 md:h-8 filter grayscale group-hover:grayscale-0 transition-all duration-500"
   />
-  <span className=" text-[#585858]  font-roboto md:text-lg">
+  <span className=" text-[#585858]  font-roboto text-sm md:text-lg">
   Custom Doors
   </span>
 </div>
@@ -187,9 +194,11 @@ const DoorCategories = () => {
     alt="Use"
     width={32}
     height={32}
-    className="filter grayscale group-hover:grayscale-0 transition-all duration-500"
+    className="w-5 h-5
+      sm:w-6 sm:h-6
+      md:w-8 md:h-8 filter grayscale group-hover:grayscale-0 transition-all duration-500"
   />
-  <span className=" text-[#585858]  font-roboto md:text-lg">
+  <span className=" text-[#585858]  font-roboto text-sm md:text-lg">
   Complete Precision
   </span>
 </div>
@@ -199,9 +208,11 @@ const DoorCategories = () => {
     alt="Use"
     width={32}
     height={32}
-    className="filter grayscale group-hover:grayscale-0 transition-all duration-500"
+    className="w-5 h-5
+      sm:w-6 sm:h-6
+      md:w-8 md:h-8 filter grayscale group-hover:grayscale-0 transition-all duration-500"
   />
-  <span className=" text-[#585858]  font-roboto md:text-lg">
+  <span className=" text-[#585858]  font-roboto text-sm md:text-lg">
   Custom Jambs
   </span>
 </div>
