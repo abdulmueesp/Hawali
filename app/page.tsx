@@ -1,3 +1,4 @@
+import Footer from "@/components/Common/Footer";
 import Header from "@/components/Common/Header";
 import BannerSection from "@/components/home/Banner";
 import Box from "@/components/home/box";
@@ -21,7 +22,7 @@ export default function Home() {
   <Measure />
   <Testimonial />
   <Prehung />
-  <div className="w-full h-[400px] border " ></div>
+  <Footer />
     </>
   );
 }

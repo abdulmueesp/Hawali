@@ -43,7 +43,8 @@ const galleryItems = [
 
 const Gallerysection = () => {
   return (
-    <>
+  
+    <div className="bg-white">
       <div className="mb-10 pl-5 md:pl-[60px] font-roboto bg-white">
         <h1 className="text-2xl md:text-5xl font-semibold  text-black font-roboto mb-4">
           Gallery
@@ -173,7 +174,8 @@ const Gallerysection = () => {
 
 
 </div>
-    </>
+</div>
+    
   )
 }
 
