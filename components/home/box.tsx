@@ -13,9 +13,16 @@ const Box = () => {
           alt="Use"
           width={32}
           height={32}
-          className="filter grayscale group-hover:grayscale-0 transition-all duration-500"
+          className="
+          w-6 h-4
+      md:w-10 md:h-6 
+    transition-all duration-500
+    md:grayscale
+    md:group-hover:grayscale-0
+  "
+
         />
-        <span className=" text-[#585858]  font-roboto md:text-lg">
+        <span className=" text-[#585858]  font-roboto text-sm md:text-lg">
           Manufactured in the US
         </span>
       </div>
@@ -27,9 +34,15 @@ const Box = () => {
           alt="Tree"
           width={30}
           height={30}
-          className="filter grayscale group-hover:grayscale-0 transition-all duration-500"
+          className="
+          w-6 h-6
+      md:w-8 md:h-8
+    transition-all duration-500
+    md:grayscale
+    md:group-hover:grayscale-0
+  "
         />
-        <span className=" text-[#585858]  font-roboto md:text-lg">
+        <span className=" text-[#585858]  font-roboto text-sm md:text-lg">
           Island Tough
         </span>
       </div>

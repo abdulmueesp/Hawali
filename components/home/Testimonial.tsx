@@ -25,7 +25,7 @@ const Testimonial = () => {
       <div className="max-w-[1400px] mx-auto">
         {/* Header Section */}
         <div className="mb-12 md:mb-16">
-          <h2 className="font-roboto font-medium text-3xl md:text-4xl lg:text-5xl mb-4 text-black">
+          <h2 className="font-roboto font-medium md:font-semibold text-2xl md:text-4xl mb-4 text-black">
             Testimonial
           </h2>
           <p className="font-roboto font-light text-lg md:text-xl text-[#3B3B3B]">

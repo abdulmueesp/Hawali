@@ -46,7 +46,7 @@ const Gallerysection = () => {
   
     <div className="bg-white">
       <div className="mb-10 pl-5 md:pl-[60px] font-roboto bg-white">
-        <h1 className="text-2xl md:text-5xl font-semibold  text-black font-roboto mb-4">
+        <h1 className="text-2xl md:text-4xl ffont-medium md:font-semibold  text-black font-roboto mb-4">
           Gallery
         </h1>
         <p className="text-sm md:text-lg text-[#3B3B3B] font-roboto max-w-xl">

@@ -4,14 +4,14 @@ import Doors from "../../public/images/door22.png"
 
 const Prehung = () => {
   return (
-    <div className="w-full px-5 md:px-15 py-8 md:pt-12 md:pb-16 lg:pb-20 bg-white  ">
+    <div className="w-full px-5 md:px-15 mb-12 py-8 md:pt-12 md:pb-16 lg:pb-20 bg-white  ">
       <div className="max-w-[1400px] mx-auto">
         <div className="relative w-full min-h-[400px] md:min-h-[420px] bg-[#84684C] rounded-lg overflow-hidden">
 
           {/* ================= LEFT CONTENT ================= */}
           <div className="relative z-10 flex flex-col justify-center h-full px-8 md:px-12 lg:px-16 py-12 md:py-16">
             <div className="max-w-xl">
-              <h2 className="font-roboto font-bold text-3xl md:text-5xl text-white leading-tight mb-6">
+              <h2 className="font-roboto font-medium md:font-semibold text-2xl md:text-5xl text-white leading-tight mb-6">
                 Pre-Hung. Pre-Bored.<br />
                 Problem-Solved.
               </h2>

@@ -80,7 +80,7 @@ const DoorCategories = () => {
       <div className="max-w-7xl md:max-w-full mx-auto">
         {/* Header */}
         <div className="mb-10 pl-5 md:pl-[60px] ">
-          <h1 className="text-2xl md:text-5xl font-medium text-black font-roboto mb-4">Door Categories</h1>
+          <h1 className="text-2xl md:text-4xl font-medium md:font-semibold text-black font-roboto mb-4">Door Categories</h1>
           {/* <p className="text-sm md:text-lg text-[#3B3B3B] font-roboto max-w-xl">
             Explore our full line of pre-hung wood and fiberglass doors,<br/>
             organized by material and style.
@@ -90,8 +90,6 @@ const DoorCategories = () => {
   <span className="hidden md:block"></span>
   organized by material and style.
 </p>
-
-
         </div>
 
         {/* Carousel */}

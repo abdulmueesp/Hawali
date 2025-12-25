@@ -11,7 +11,7 @@ const Measure = () => {
           {/* Left Content Section */}
           <div className="order-2 lg:order-1 flex flex-col justify-between h-full">
             <div>
-              <h1 className="font-roboto font-semibold text-2xl md:text-5xl leading-tight mb-6 md:mb-8">
+              <h1 className="font-roboto font-medium md:font-semibold text-2xl md:text-4xl leading-tight mb-6 md:mb-8 text-black">
                 Measure Twice.<br />
                 Deliver Once.
               </h1>
