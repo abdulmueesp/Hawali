@@ -5,6 +5,8 @@ import Hollowcoreimg from "../../public/images/hollowcore.png"
 import Fiberglassimg from "../../public/images/fiberglass.png"
 import Particlecoreimg from "../../public/images/particlecore.png"
 import Sclcimg from "../../public/images/sclc.png"
+import Vector5 from "../../public/images/vector5.png"
+import Vector6 from "../../public/images/vector6.png"
 
 const galleryItems = [
   {
@@ -42,8 +44,8 @@ const galleryItems = [
 const Gallerysection = () => {
   return (
     <>
-      <div className="mb-10 pl-5 md:pl-[60px] font-roboto">
-        <h1 className="text-2xl md:text-5xl font-medium text-black font-roboto mb-4">
+      <div className="mb-10 pl-5 md:pl-[60px] font-roboto bg-white">
+        <h1 className="text-2xl md:text-5xl font-semibold  text-black font-roboto mb-4">
           Gallery
         </h1>
         <p className="text-sm md:text-lg text-[#3B3B3B] font-roboto max-w-xl">
@@ -52,7 +54,7 @@ const Gallerysection = () => {
       </div>
 
       {/* Gallery Grid */}
-      <div className="px-5 md:px-[60px] pb-16">
+      <div className="px-5 md:px-[60px] pb-16 bg-white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* First Row - 2 columns */}
           <div className="group relative h-[300px] rounded-2xl overflow-hidden cursor-pointer">
@@ -139,6 +141,38 @@ const Gallerysection = () => {
           </div>
         </div>
       </div>
+      <div className="relative w-full min-h-[68px] md:h-[68px] flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 py-3 md:py-0 bg-[#F6F5F1] group cursor-pointer mt-[40px] md:mt-[75px]">
+
+{/* Item 1 */}
+<div className="flex  items-center md:flex-row gap-2">
+  <Image
+    src={Vector5}
+    alt="Use"
+    className="w-5 h-5
+      sm:w-6 sm:h-6
+      md:w-8 md:h-8 filter grayscale group-hover:grayscale-0 transition-all duration-500"
+  />
+  <span className=" text-[#585858]  font-roboto text-sm md:text-lg">
+  Machined to Perfection
+  </span>
+</div>
+<div className="flex  items-center md:flex-row gap-2">
+  <Image
+    src={Vector6}
+    alt="Use"
+    width={32}
+    height={32}
+    className="w-5 h-5
+      sm:w-6 sm:h-6
+      md:w-8 md:h-8 filter grayscale group-hover:grayscale-0 transition-all duration-500"
+  />
+  <span className=" text-[#585858]  font-roboto text-sm md:text-lg">
+  True Hawaii Spec
+  </span>
+</div>
+
+
+</div>
     </>
   )
 }

@@ -3,7 +3,10 @@ import BannerSection from "@/components/home/Banner";
 import Box from "@/components/home/box";
 import DoorCategories from "@/components/home/Doorcategories";
 import Gallerysection from "@/components/home/Gallery";
+import Measure from "@/components/home/measure";
+import Prehung from "@/components/home/prehung";
 import StepsDoor from "@/components/home/Steps";
+import Testimonial from "@/components/home/Testimonial";
 import Image from "next/image";
 
 export default function Home() {
@@ -15,6 +18,9 @@ export default function Home() {
   <StepsDoor />
   <DoorCategories />
   <Gallerysection />
+  <Measure />
+  <Testimonial />
+  <Prehung />
   <div className="w-full h-[400px] border " ></div>
     </>
   );
