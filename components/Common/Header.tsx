@@ -23,6 +23,7 @@ export default function Header() {
 
         {/* Logo */}
         <div className="flex items-center">
+        <Link href="/" aria-label="Go to home">
         <Image
   src={logo}
   alt="Logo"
@@ -31,6 +32,7 @@ export default function Header() {
   className="w-[30px] h-[40px] md:w-[40px] md:h-[50px]"
   priority
 />
+</Link>
         </div>
 
         {/* Desktop Menu */}
