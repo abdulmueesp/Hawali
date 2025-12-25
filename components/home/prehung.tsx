@@ -39,7 +39,7 @@ const Prehung = () => {
           </div>
 
           {/* ================= DESKTOP IMAGE ================= */}
-          <div className="absolute right-0 bottom-0 top-18 hidden md:block w-[55%] h-full pr-10">
+          <div className="absolute right-0 bottom-0 top-18 hidden md:block w-[50%] h-full pr-10">
             <div className="relative w-full h-full">
               <Image
                 src={Doors}
