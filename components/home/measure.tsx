@@ -68,7 +68,7 @@ const Measure = () => {
         </div>
       </div>
     </div>
-    <div className="relative px-5 md:px-0 w-full min-h-[68px] md:h-[68px] flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 py-3 md:py-0 bg-[#F6F5F1] group cursor-pointer  ">
+    <div className="relative px-5 md:px-0 w-full min-h-[68px] md:h-[68px] flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 py-3 md:py-0 bg-[#F6F5F1] group cursor-pointer md:mt-9 ">
 
 {/* Item 1 */}
 <div className="flex  items-center md:flex-row gap-2">

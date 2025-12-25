@@ -21,7 +21,7 @@ const Testimonial = () => {
   ]
 
   return (
-    <div className="w-full px-5 md:px-15 pt-7 pb-12 md:py-16 lg:py-20 bg-white font-roboto">
+    <div className="w-full px-5 md:px-15 pt-12 pb-12 md:py-16 lg:py-20 bg-white font-roboto">
       <div className="max-w-[1400px] mx-auto">
         {/* Header Section */}
         <div className="mb-10 md:mb-12">
