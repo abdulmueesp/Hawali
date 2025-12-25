@@ -21,7 +21,7 @@ const Measure = () => {
               </p>
             </div>
 
-            <button className="w-max group relative inline-flex items-center gap-3 overflow-hidden rounded-3xl bg-[#B6D78A] px-4 md:px-5 py-1 md:py-2 font-roboto text-xl text-white mt-5 md:mt-6 mb-[20px] ">
+            <button className="w-max group relative inline-flex items-center gap-3 overflow-hidden rounded-3xl bg-[#B6D78A] px-5 py-2 font-roboto text-xl text-white mt-5 md:mt-6 mb-[20px] ">
 {/* WhatsApp-style black reveal */}
 <span
   className="

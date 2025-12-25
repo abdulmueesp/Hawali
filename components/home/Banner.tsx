@@ -42,7 +42,7 @@ export default function BannerSection() {
             </h3>
 
             {/* Button */}
-            <button className="group relative mt-7 inline-flex items-center gap-2 md:gap-3 overflow-hidden rounded-3xl bg-[#FF6E4A] px-4 md:px-5 py-1 md:py-2 font-roboto text-xl text-white">
+            <button className="group relative mt-7 inline-flex items-center gap-2 md:gap-3 overflow-hidden rounded-3xl bg-[#FF6E4A] px-5 py-2 font-roboto text-xl text-white">
 
 {/* WhatsApp-style black reveal */}
 <span

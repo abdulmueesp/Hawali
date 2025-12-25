@@ -164,7 +164,7 @@ const StepsDoor = () => {
         </div>
       </div>
       <div className="w-full flex justify-center items-center ">
-        <button className="group relative  inline-flex items-center gap-3 overflow-hidden rounded-3xl bg-[#FF6E4A] px-4 md:px-5 py-1 md:py-2 font-roboto text-xl text-white mt-10 md:mt-4  mb-[25px] md:mb-[62px]">
+        <button className="group relative  inline-flex items-center gap-3 overflow-hidden rounded-3xl bg-[#FF6E4A] px-5 py-2 font-roboto text-xl text-white mt-10 md:mt-4  mb-[25px] md:mb-[62px]">
 
           {/* WhatsApp-style black reveal */}
           <span
