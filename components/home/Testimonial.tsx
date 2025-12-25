@@ -21,14 +21,14 @@ const Testimonial = () => {
   ]
 
   return (
-    <div className="w-full px-5 md:px-15 py-12 md:py-16 lg:py-20 bg-white font-roboto">
+    <div className="w-full px-5 md:px-15 pt-7 pb-12 md:py-16 lg:py-20 bg-white font-roboto">
       <div className="max-w-[1400px] mx-auto">
         {/* Header Section */}
-        <div className="mb-12 md:mb-16">
-          <h2 className="font-roboto font-medium md:font-semibold text-2xl md:text-4xl mb-4 text-black">
+        <div className="mb-10 md:mb-12">
+          <h2 className="font-roboto font-medium md:font-semibold text-2xl md:text-4xl mb-2 md:mb-4 text-black">
             Testimonial
           </h2>
-          <p className="font-roboto font-light text-lg md:text-xl text-[#3B3B3B]">
+          <p className="text-sm md:text-lg text-[#3B3B3B] font-roboto max-w-xl pr-2">
             Real feedback from the people who build, design, and<br className="hidden md:block" />
             live with our doors.
           </p>

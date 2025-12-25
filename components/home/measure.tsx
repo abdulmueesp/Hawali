@@ -5,7 +5,7 @@ import Vector7 from "../../public/images/vector7.png"
 const Measure = () => {
   return (
     <>
-    <div className="w-full px-4  md:px-15 py-12 md:py-16 lg:py-18 bg-white">
+    <div className="w-full px-4  md:px-15 pb-7 pt-12 md:py-16 lg:py-18 bg-white">
       <div className="max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Left Content Section */}
@@ -21,7 +21,7 @@ const Measure = () => {
               </p>
             </div>
 
-            <button className="w-max group relative inline-flex items-center gap-3 overflow-hidden rounded-3xl bg-[#B6D78A] px-5 py-2 font-roboto text-xl text-white mt-5 md:mt-6 mb-[25px] md:mb-[62px]">
+            <button className="w-max group relative inline-flex items-center gap-3 overflow-hidden rounded-3xl bg-[#B6D78A] px-4 md:px-5 py-1 md:py-2 font-roboto text-xl text-white mt-5 md:mt-6 mb-[20px] ">
 {/* WhatsApp-style black reveal */}
 <span
   className="
@@ -77,9 +77,9 @@ const Measure = () => {
     alt="Use"
     className="w-5 h-5
       sm:w-6 sm:h-6
-      md:w-8 md:h-8 filter grayscale group-hover:grayscale-0 transition-all duration-500"
+      md:w-8 md:h-8 filter md:grayscale md:group-hover:grayscale-0 transition-all duration-500"
   />
-  <span className=" text-[#585858]  font-roboto text-sm md:text-lg">
+  <span className=" text-[#585858]  font-roboto text-sm md:text-lg pr-2">
   Crafted for Hawaii’s Heat, Humidity, and Salt Air.
   </span>
 </div>

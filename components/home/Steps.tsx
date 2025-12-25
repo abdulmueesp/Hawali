@@ -38,7 +38,7 @@ const StepsDoor = () => {
                 alt="Build It"
                 width={170}
                 height={170}
-                className="w-[140px] md:w-[170px] h-auto mb-5 md:mb-6 grayscale group-hover:grayscale-0 transition-all duration-500"
+                className="w-[140px] md:w-[170px] h-auto mb-5 md:mb-6 md:grayscale md:group-hover:grayscale-0 transition-all duration-500"
               />
               <h4 className="text-xl font-medium text-black">Build It</h4>
               <p className="mt-2 text-[#3B3B3B] text-sm md:text-base">
@@ -47,7 +47,7 @@ const StepsDoor = () => {
             </div>
 
             <div className="flex md:hidden justify-center mb-6">
-              <Image src={Downarrow} alt="Down Arrow" width={20} height={20} className="grayscale group-hover:grayscale-0 transition-all duration-300" />
+              <Image src={Downarrow} alt="Down Arrow" width={20} height={20} className="md:grayscale md:group-hover:grayscale-0 transition-all duration-300" />
             </div>
 
             <div className="hidden md:flex absolute right-[-60px] top-1/3 -translate-y-1/2">
@@ -57,13 +57,13 @@ const StepsDoor = () => {
                 width={60}
                 height={60}
                 className="
-                grayscale
-                group-hover:grayscale-0
+                md:grayscale
+                md:group-hover:grayscale-0
                 transition-transform
                 duration-300
                 ease-out
                 transform
-                group-hover:translate-y-1
+                md:group-hover:translate-y-1
               "
               />
             </div>
@@ -78,7 +78,7 @@ const StepsDoor = () => {
                 alt="Review"
                 width={100}
                 height={100}
-                className=" w-[80px] md:w-[100px] h-auto mb-5 md:mb-6 grayscale group-hover:grayscale-0 transition-all duration-500"
+                className=" w-[80px] md:w-[100px] h-auto mb-5 md:mb-6 md:grayscale md:group-hover:grayscale-0 transition-all duration-500"
               />
               <h4 className="text-xl font-medium text-black">Review</h4>
               <p className="mt-2 text-[#3B3B3B] text-sm md:text-base">
@@ -86,7 +86,7 @@ const StepsDoor = () => {
               </p>
             </div>
             <div className="flex md:hidden justify-center mb-6 ">
-              <Image src={Downarrow} alt="Down Arrow" width={20} height={20} className="grayscale group-hover:grayscale-0 transition-all duration-300" />
+              <Image src={Downarrow} alt="Down Arrow" width={20} height={20} className="md:grayscale md:group-hover:grayscale-0 transition-all duration-300" />
             </div>
             <div className="hidden md:flex absolute right-[-10px] top-1/3 -translate-y-1/2">
               <Image
@@ -95,13 +95,13 @@ const StepsDoor = () => {
                 width={60}
                 height={60}
                 className="
-      grayscale
-      group-hover:grayscale-0
+      md:grayscale
+      md:group-hover:grayscale-0
       transition-transform
       duration-300
       ease-out
       transform
-      group-hover:translate-y-1
+      md:group-hover:translate-y-1
     "
               />
             </div>
@@ -115,7 +115,7 @@ const StepsDoor = () => {
                 alt="Submit"
                 width={210}
                 height={210}
-                className="w-[160px] md:w-[210px] h-auto mb-5 md:mb-6 grayscale group-hover:grayscale-0 transition-all duration-500"
+                className="w-[160px] md:w-[210px] h-auto mb-5 md:mb-6 md:grayscale md:group-hover:grayscale-0 transition-all duration-500"
               />
               <h4 className="text-xl font-medium text-black">Submit</h4>
               <p className="mt-2 text-[#3B3B3B] text-sm md:text-base">
@@ -123,7 +123,7 @@ const StepsDoor = () => {
               </p>
             </div>
             <div className="flex md:hidden justify-center mb-6">
-              <Image src={Downarrow} alt="Down Arrow" width={20} height={20} className="grayscale group-hover:grayscale-0 transition-all duration-300" />
+              <Image src={Downarrow} alt="Down Arrow" width={20} height={20} className="md:grayscale md:group-hover:grayscale-0 transition-all duration-300" />
             </div>
             <div className="hidden md:flex absolute right-[-60px] top-1/3 -translate-y-1/2">
               <Image
@@ -132,13 +132,13 @@ const StepsDoor = () => {
                 width={60}
                 height={60}
                 className="
-                grayscale
-                group-hover:grayscale-0
+                md:grayscale
+                md:group-hover:grayscale-0
                 transition-transform
                 duration-300
                 ease-out
                 transform
-                group-hover:translate-y-1
+                md:group-hover:translate-y-1
               "
               />
             </div>
@@ -152,7 +152,7 @@ const StepsDoor = () => {
                 alt="Your Door"
                 width={120}
                 height={120}
-                className="w-[90px] md:w-[120px] h-auto mb-5 md:mb-6 grayscale group-hover:grayscale-0 transition-all duration-500"
+                className="w-[90px] md:w-[120px] h-auto mb-5 md:mb-6 md:grayscale md:group-hover:grayscale-0 transition-all duration-500"
               />
               <h4 className="text-xl font-medium text-black">Get Your Door</h4>
               <p className="mt-2 text-[#3B3B3B] text-sm md:text-base">
@@ -164,7 +164,7 @@ const StepsDoor = () => {
         </div>
       </div>
       <div className="w-full flex justify-center items-center ">
-        <button className="group relative  inline-flex items-center gap-3 overflow-hidden rounded-3xl bg-[#FF6E4A] px-5 py-2 font-roboto text-xl text-white mt-10 md:mt-4  mb-[25px] md:mb-[62px]">
+        <button className="group relative  inline-flex items-center gap-3 overflow-hidden rounded-3xl bg-[#FF6E4A] px-4 md:px-5 py-1 md:py-2 font-roboto text-xl text-white mt-10 md:mt-4  mb-[25px] md:mb-[62px]">
 
           {/* WhatsApp-style black reveal */}
           <span
@@ -197,7 +197,7 @@ const StepsDoor = () => {
           </span>
         </button>
       </div>
-      <div className="relative w-full min-h-[68px] md:h-[68px] flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 py-3 md:py-0 bg-[#F6F5F1] group cursor-pointer">
+      <div className="relative w-full min-h-[60px] md:h-[68px] flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 py-3 md:py-0 bg-[#F6F5F1] group cursor-pointer mt-4 md:mt-0">
 
 {/* Item 1 */}
 <div className="flex  items-center md:flex-row gap-2">
@@ -206,9 +206,10 @@ const StepsDoor = () => {
     alt="Use"
     width={32}
     height={32}
-    className="filter grayscale group-hover:grayscale-0 transition-all duration-500"
+    className="w-6 h-6
+      md:w-8 md:h-8 filter md:grayscale md:group-hover:grayscale-0 transition-all duration-500"
   />
-  <span className=" text-[#585858]  font-roboto md:text-lg">
+  <span className=" text-[#585858]  font-roboto text-sm md:text-lg">
   Delivered Across Hawaii.
   </span>
 </div>

@@ -76,11 +76,11 @@ const DoorCategories = () => {
   };
 
   return (
-    <div className="w-full h-min md:min-h-screen bg-white py-10 ">
+    <div className="w-full h-min md:min-h-screen bg-white pt-4 pb-10 md:py-10 ">
       <div className="max-w-7xl md:max-w-full mx-auto">
         {/* Header */}
         <div className="mb-10 pl-5 md:pl-[60px] ">
-          <h1 className="text-2xl md:text-4xl font-medium md:font-semibold text-black font-roboto mb-4">Door Categories</h1>
+          <h1 className="text-2xl md:text-4xl font-medium md:font-semibold text-black font-roboto mb-2 md:mb-4">Door Categories</h1>
           {/* <p className="text-sm md:text-lg text-[#3B3B3B] font-roboto max-w-xl">
             Explore our full line of pre-hung wood and fiberglass doors,<br/>
             organized by material and style.
@@ -97,7 +97,7 @@ const DoorCategories = () => {
           {/* Previous Button */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 md:left-4 lg:left-0 z-20 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-gray-400 hover:bg-gray-500 text-white flex items-center justify-center transition-all shadow-lg"
+            className="absolute left-0 md:left-4 lg:left-0 z-20 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 ml-4 md:ml-13 rounded-full bg-gray-400 hover:bg-gray-500 text-white flex items-center justify-center transition-all shadow-lg"
             aria-label="Previous door"
           >
             <ChevronLeft className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
@@ -122,7 +122,7 @@ const DoorCategories = () => {
                     transform: `translateX(${getTranslateX(category.position)}px) scale(${getScale(isCurrent)})`,
                   }}
                 >
-                  <div className="relative w-48 h-[300px] md:w-64 md:h-[380px] lg:w-80  rounded-xl md:rounded-2xl overflow-hidden shadow-xl md:shadow-2xl">
+                  <div className="relative w-48 h-[300px] md:w-64 md:h-[380px] lg:w-80  rounded-xl md:rounded-2xl overflow-hidden ">
                     <Image
                       src={category.image}
                       alt={category.title}
@@ -148,7 +148,7 @@ const DoorCategories = () => {
           {/* Next Button */}
           <button
             onClick={nextSlide}
-            className="absolute right-0 md:right-4 lg:right-0 z-20 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full bg-gray-400 hover:bg-gray-500 text-white flex items-center justify-center transition-all shadow-lg"
+            className="absolute right-0 md:right-4 lg:right-0 z-20 w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14 mr-4 md:mr-13 rounded-full bg-gray-400 hover:bg-gray-500 text-white flex items-center justify-center transition-all shadow-lg"
             aria-label="Next door"
           >
             <ChevronRight className="w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6" />
@@ -156,7 +156,7 @@ const DoorCategories = () => {
         </div>
 
         {/* Dots Indicator */}
-        <div className="flex justify-center gap-2 mt-12">
+        <div className="flex justify-center gap-2 mt-5 md:mt-12">
           {categories.map((_, idx) => (
             <button
               key={idx}
@@ -171,7 +171,7 @@ const DoorCategories = () => {
           ))}
         </div>
       </div>
-      <div className="relative w-full min-h-[68px] md:h-[68px] flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 py-3 md:py-0 bg-[#F6F5F1] group cursor-pointer mt-[40px] md:mt-[75px]">
+      <div className="relative w-full min-h-[68px] md:h-[68px] flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 py-3 md:py-0 bg-[#F6F5F1] group cursor-pointer mt-[50px] md:mt-[75px] mb-0 md:mb-6">
 
 {/* Item 1 */}
 <div className="flex  items-center md:flex-row gap-2">
@@ -180,7 +180,7 @@ const DoorCategories = () => {
     alt="Use"
     className="w-5 h-5
       sm:w-6 sm:h-6
-      md:w-8 md:h-8 filter grayscale group-hover:grayscale-0 transition-all duration-500"
+      md:w-8 md:h-8 filter md:grayscale md:group-hover:grayscale-0 transition-all duration-500"
   />
   <span className=" text-[#585858]  font-roboto text-sm md:text-lg">
   Custom Doors
@@ -194,7 +194,7 @@ const DoorCategories = () => {
     height={32}
     className="w-5 h-5
       sm:w-6 sm:h-6
-      md:w-8 md:h-8 filter grayscale group-hover:grayscale-0 transition-all duration-500"
+      md:w-8 md:h-8 filter md:grayscale md:group-hover:grayscale-0 transition-all duration-500"
   />
   <span className=" text-[#585858]  font-roboto text-sm md:text-lg">
   Complete Precision
@@ -208,7 +208,7 @@ const DoorCategories = () => {
     height={32}
     className="w-5 h-5
       sm:w-6 sm:h-6
-      md:w-8 md:h-8 filter grayscale group-hover:grayscale-0 transition-all duration-500"
+      md:w-8 md:h-8 filter md:grayscale md:group-hover:grayscale-0 transition-all duration-500"
   />
   <span className=" text-[#585858]  font-roboto text-sm md:text-lg">
   Custom Jambs
