@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
@@ -8,7 +8,14 @@ import logo from "../../public/images/logo.png";
 export default function Header() {
   const [open, setOpen] = useState(false);
 
-  const menuItems = ["PRODUCTS", "GALLERY", "ABOUT", "CONTACT"];
+  const menuItems = [
+    { label: "PRODUCTS", path: "#" },
+    { label: "GALLERY", path: "#" },
+    { label: "ABOUT", path: "#" },
+    { label: "CAREER", path: "/career" },
+    { label: "CONTACT", path: "/contact" },
+  ];
+  
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full bg-black h-[70px] md:h-[80px]">
@@ -28,16 +35,17 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center gap-8 text-white font-medium font-roboto">
-          {menuItems.map((item) => (
-            <a
-              key={item}
-              href="#"
-              className="transition-colors duration-300 hover:text-[#FF6E4A]"
-            >
-              {item}
-            </a>
-          ))}
-        </nav>
+  {menuItems.map((item) => (
+    <Link
+      key={item.label}
+      href={item.path}
+      className="transition-colors duration-300 hover:text-[#FF6E4A]"
+    >
+      {item.label}
+    </Link>
+  ))}
+</nav>
+
 
         {/* Mobile Menu Icon */}
         <button
@@ -65,17 +73,18 @@ export default function Header() {
 
         {/* Menu Items */}
         <nav className="flex flex-col items-center gap-6 py-10 text-lg font-medium font-roboto">
-          {menuItems.map((item) => (
-            <a
-              key={item}
-              href="#"
-              onClick={() => setOpen(false)}
-              className="transition-colors duration-300 hover:text-[#FF6E4A]"
-            >
-              {item}
-            </a>
-          ))}
-        </nav>
+  {menuItems.map((item) => (
+    <Link
+      key={item.label}
+      href={item.path}
+      onClick={() => setOpen(false)}
+      className="transition-colors duration-300 hover:text-[#FF6E4A]"
+    >
+      {item.label}
+    </Link>
+  ))}
+</nav>
+
       </div>
     </header>
   );
