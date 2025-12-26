@@ -64,10 +64,10 @@ export default function Contact() {
             {/* Left Side - Content */}
             <div className="space-y-8">
               <div>
-                <h1 className="text-2xl md:text-4xl  font-roboto font-bold text-black mb-6">
+                <h1 className="text-2xl md:text-4xl  font-roboto font-bold text-black mb-4 md:mb-6">
                   Let's Get Your Door Right
                 </h1>
-                <p className="text-lg text-gray-700 mb-4">
+                <p className="text-md md:text-lg text-gray-700 mb-4">
                   Reach out for quotes, project coordination, or vendor inquiries. We review every message personally, no bots, no scripts, just people who know doors
                 </p>
 
@@ -108,7 +108,7 @@ export default function Contact() {
 
               {/* Map and Visit Us */}
               <div className="space-y-6">
-                <h2 className="text-2xl font-bold text-gray-900">Visit Us</h2>
+                <h2 className="text-xl md:text-2xl font-bold font-roboto text-gray-900">Visit Us</h2>
                 
                 {/* Google Map */}
                 <div className="w-full h-64 lg:h-80 rounded-lg overflow-hidden shadow-lg">
@@ -186,7 +186,7 @@ export default function Contact() {
 
             {/* Right Side - Form */}
             <div className="bg-white p-8 lg:p-10 rounded-2xl shadow-xl h-min">
-              <h2 className="text-xl font-bold text-gray-700 mb-2">
+              <h2 className="text-md md:text-xl font-semibold md:font-bold text-gray-700 mb-2">
                 Fill out the form below and we'll get back to you within 24 hours.
               </h2>
               
@@ -198,7 +198,7 @@ export default function Contact() {
                     placeholder="First name"
                     value={formData.firstName}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition placeholder-gray-400"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition placeholder-gray-400 text-black"
                   />
                   <input
                     type="text"
@@ -206,7 +206,7 @@ export default function Contact() {
                     placeholder="Last name"
                     value={formData.lastName}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition placeholder-gray-400"
+                    className="text-black w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition placeholder-gray-400"
                   />
                 </div>
 
@@ -222,7 +222,7 @@ export default function Contact() {
                     placeholder="Your email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition placeholder-gray-400"
+                    className="text-black w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition placeholder-gray-400"
                   />
                 </div>
 
@@ -232,7 +232,7 @@ export default function Contact() {
                   placeholder="Phone number"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition placeholder-gray-400"
+                  className="text-black w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition placeholder-gray-400"
                 />
 
                 <textarea
@@ -241,7 +241,7 @@ export default function Contact() {
                   rows={6}
                   value={formData.message}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition resize-none placeholder-gray-400"
+                  className=" text-black w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition resize-none placeholder-gray-400"
                 ></textarea>
 
                 <button
@@ -259,7 +259,7 @@ export default function Contact() {
       {/* FAQ Section */}
       <section className="bg-white py-16 lg:py-24">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-12">
+          <h2 className="text-2xl lg:text-4xl font-roboto font-bold text-gray-900 text-center mb-12">
             Frequently Asked Questions
           </h2>
           
